@@ -1,6 +1,6 @@
 Package: dashAutocomplete
 Title: Dash dropdown component that enables user-controlled filtering.
-Version: 0.0.5
+Version: 0.1.0
 Description: Dash dropdown component that enables user-controlled filtering.
 Depends: R (>= 3.0.2)
 Imports: 

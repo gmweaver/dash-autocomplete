@@ -3,7 +3,7 @@ module DashAutocomplete
 using Dash
 
 const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
-const version = "0.0.5"
+const version = "0.1.0"
 
 include("jl/dashautocomplete.jl")
 
