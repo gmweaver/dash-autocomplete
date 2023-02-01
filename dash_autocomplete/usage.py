@@ -25,7 +25,7 @@ app.layout = html.Div(
             id="address-search",
             placeholder="Search address...",
             delay=1000,
-            hyperlinks=False,
+            hyperlinks=True,
         ),
         dcc.Store(id="last-search-at"),
     ]
