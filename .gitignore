@@ -278,3 +278,4 @@ GitHub.sublime-settings
 # Python env
 bin/
 lib/
+pyvenv.cfg
