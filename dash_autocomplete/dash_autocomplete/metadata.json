@@ -9,7 +9,7 @@
         "modifiers": [],
         "params": [
           {
-            "name": "{ value, label }",
+            "name": "{value, label }",
             "type": null
           }
         ],
@@ -234,6 +234,18 @@
         "description": "Enables hyperlinks, where the value is assumed to to be a link.",
         "defaultValue": {
           "value": "false",
+          "computed": false
+        }
+      },
+      "hyperlink_root": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.string"
+        },
+        "required": false,
+        "description": "Root to prepend to hyperlinks",
+        "defaultValue": {
+          "value": "''",
           "computed": false
         }
       }

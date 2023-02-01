@@ -31,6 +31,9 @@ Keyword arguments:
     If True, this dropdown is disabled and the selection cannot be
     changed.
 
+- hyperlink_root (default ''):
+    Root to prepend to hyperlinks.
+
 - hyperlinks (default False):
     Enables hyperlinks, where the value is assumed to to be a link.
 
@@ -91,12 +94,12 @@ Keyword arguments:
     can be selected at once, and `value` is an array of items with
     values corresponding to those in the `options` prop."""
     @_explicitize_args
-    def __init__(self, options=Component.UNDEFINED, value=Component.UNDEFINED, id=Component.UNDEFINED, optionHeight=Component.UNDEFINED, className=Component.UNDEFINED, clearable=Component.UNDEFINED, disabled=Component.UNDEFINED, multi=Component.UNDEFINED, placeholder=Component.UNDEFINED, searchable=Component.UNDEFINED, search_value=Component.UNDEFINED, delay=Component.UNDEFINED, style=Component.UNDEFINED, loading_state=Component.UNDEFINED, persistence=Component.UNDEFINED, persisted_props=Component.UNDEFINED, persistence_type=Component.UNDEFINED, hyperlinks=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'className', 'clearable', 'delay', 'disabled', 'hyperlinks', 'loading_state', 'multi', 'optionHeight', 'options', 'persisted_props', 'persistence', 'persistence_type', 'placeholder', 'search_value', 'searchable', 'setProps', 'style', 'value']
+    def __init__(self, options=Component.UNDEFINED, value=Component.UNDEFINED, id=Component.UNDEFINED, optionHeight=Component.UNDEFINED, className=Component.UNDEFINED, clearable=Component.UNDEFINED, disabled=Component.UNDEFINED, multi=Component.UNDEFINED, placeholder=Component.UNDEFINED, searchable=Component.UNDEFINED, search_value=Component.UNDEFINED, delay=Component.UNDEFINED, style=Component.UNDEFINED, loading_state=Component.UNDEFINED, persistence=Component.UNDEFINED, persisted_props=Component.UNDEFINED, persistence_type=Component.UNDEFINED, hyperlinks=Component.UNDEFINED, hyperlink_root=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'className', 'clearable', 'delay', 'disabled', 'hyperlink_root', 'hyperlinks', 'loading_state', 'multi', 'optionHeight', 'options', 'persisted_props', 'persistence', 'persistence_type', 'placeholder', 'search_value', 'searchable', 'setProps', 'style', 'value']
         self._type = 'DashAutocomplete'
         self._namespace = 'dash_autocomplete'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'className', 'clearable', 'delay', 'disabled', 'hyperlinks', 'loading_state', 'multi', 'optionHeight', 'options', 'persisted_props', 'persistence', 'persistence_type', 'placeholder', 'search_value', 'searchable', 'setProps', 'style', 'value']
+        self.available_properties = ['id', 'className', 'clearable', 'delay', 'disabled', 'hyperlink_root', 'hyperlinks', 'loading_state', 'multi', 'optionHeight', 'options', 'persisted_props', 'persistence', 'persistence_type', 'placeholder', 'search_value', 'searchable', 'setProps', 'style', 'value']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

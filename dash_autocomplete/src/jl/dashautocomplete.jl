@@ -18,6 +18,7 @@ not a small "x" appears on the right of the dropdown that removes
 the selected value.
 - `delay` (optional): Delay to use for updating select options. Use to reduce number of calls to external API for options.
 - `disabled` (optional): If true, this dropdown is disabled and the selection cannot be changed.
+- `hyperlink_root` (optional): Root to prepend to hyperlinks
 - `hyperlinks` (optional): Enables hyperlinks, where the value is assumed to to be a link.
 - `loading_state` (optional): Object that holds the loading state object coming from dash-renderer
 - `multi` (optional): If true, the user can select multiple values
@@ -50,7 +51,7 @@ array of items with values corresponding to those in the
 `options` prop.
 """
 function dashautocomplete(; kwargs...)
-        available_props = Symbol[:id, :className, :clearable, :delay, :disabled, :hyperlinks, :loading_state, :multi, :optionHeight, :options, :persisted_props, :persistence, :persistence_type, :placeholder, :search_value, :searchable, :style, :value]
+        available_props = Symbol[:id, :className, :clearable, :delay, :disabled, :hyperlink_root, :hyperlinks, :loading_state, :multi, :optionHeight, :options, :persisted_props, :persistence, :persistence_type, :placeholder, :search_value, :searchable, :style, :value]
         wild_props = Symbol[]
         return Component("dashautocomplete", "DashAutocomplete", "dash_autocomplete", available_props, wild_props; kwargs...)
 end

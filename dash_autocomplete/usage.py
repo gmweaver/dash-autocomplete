@@ -26,6 +26,7 @@ app.layout = html.Div(
             placeholder="Search address...",
             delay=1000,
             hyperlinks=True,
+            hyperlink_root="root",
         ),
         dcc.Store(id="last-search-at"),
     ]

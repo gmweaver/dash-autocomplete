@@ -11,9 +11,9 @@ DashAutocompleteComponent A simplified select that enables user to use server-si
 
 \usage{
 dashAutocomplete(id=NULL, className=NULL, clearable=NULL, delay=NULL,
-disabled=NULL, hyperlinks=NULL, loading_state=NULL,
-multi=NULL, optionHeight=NULL, options=NULL,
-persisted_props=NULL, persistence=NULL,
+disabled=NULL, hyperlink_root=NULL, hyperlinks=NULL,
+loading_state=NULL, multi=NULL, optionHeight=NULL,
+options=NULL, persisted_props=NULL, persistence=NULL,
 persistence_type=NULL, placeholder=NULL, search_value=NULL,
 searchable=NULL, style=NULL, value=NULL)
 }
@@ -32,6 +32,8 @@ the selected value.}
 \item{delay}{Delay to use for updating select options. Use to reduce number of calls to external API for options.}
 
 \item{disabled}{If true, this dropdown is disabled and the selection cannot be changed.}
+
+\item{hyperlink_root}{Root to prepend to hyperlinks}
 
 \item{hyperlinks}{Enables hyperlinks, where the value is assumed to to be a link.}
 
